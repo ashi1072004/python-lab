@@ -1,0 +1,74 @@
+Differences between python 2 and 3:
+1) print() function
+2) Integer division
+3) Unicode strings
+4) Error handling ("as" keyword used in py3)
+5) xrange() only used in py2
+	slower but memory optimal
+	range() is faster but takes up memory
+6) Raising exception
+7) List comprehenson loop variables (local & global)
+8) Future modules
+	importing functions from future in py2
+
+Python rivals: Perl, Ruby
+Python 3.8 has 69 built-in functions and 36 keywords.
+To get a list: 
+	help("keywords")
+OR	import keyword
+	keyword.kwlist
+	keyword.iskeyword("finally") (returns True)
+To check if an identifier is valid or not:
+	print("identifier-name".isidentifier())
+
+The simplest expression is a literal itself.
+Types of literals:
+1) String literals
+2) Numeric literals (ints, floats, complex(with 'j'))
+3) Boolean Literals
+4) Special Literal (None)
+5) Literal Collections (lists, tuples, sets, dictionaries)
+#Python allows underscores in numeric literals.
+
+Types of operators:
+1) Arithmetic operators (+ - * / % ** //)
+2) Assignment operators (= += -= *= /= %= **= //= &= |= ^= >>= <<=)
+3) Comparison operators (== != > < >= <=)
+4) Logical operators (and, or, not)
+5) Identity operators (is, is not)
+6) Membership operators (in, not in)
+7) Bitwise operators (& | ~ ^ << >>)
+
+Operator priorities:
+1) + - (unary)
+2) **
+3) * / // %
+4) + - (binary)
+5) < <= > >=
+6) == !=
+
+Docstrings can be accessed in this way:
+def intro():  
+  """ 
+This function prints Welcome to Scaler
+  """  
+  print("Welcome to Scaler")              
+print(intro.__doc__)
+
+split() method:
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+format() method:
+x = 3
+y = 12
+mul = x * y
+print('The value of x is {} and y is {}'.format(x, y))
+print('{2} is the multiplication of {0} and {1}'.format(x, y, mul))
+
+id() --> built-in function, gives memory addresses of objects being passed.
+
+#Function parameters can have their type defined along with them:
+def multiply(a:int, b:int):
+   print (a*b)
+multiply(5,10)
